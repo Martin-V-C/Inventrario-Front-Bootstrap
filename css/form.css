@@ -1,0 +1,6 @@
+.form-container {
+    max-width: 600px;
+    border: solid;
+    margin: 5rem auto;
+    padding: 50px 25px;
+}

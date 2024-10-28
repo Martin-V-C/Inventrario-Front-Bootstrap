@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/botstrap.css">
+    <link rel="stylesheet" href="/css/form.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md ">
+        <div class="container-sm nav-data ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-config" id="navbarToggler">
+                <a class="navbar-brand" href="#">Logo</a>
+                <ul class="navbar-nav nav-ul-config">
+                    <li class=" nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inventario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cerrar Sesion</a>
+                    </li>
+                    <li class="nav-item user-data">
+                        <i class="bi bi-person user-data-item-large "></i>
+                        <p class="user-data-item ">Nombre usuario</p>
+                        <p class="user-data-item ">rol</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="form_seccion">
+        <div class="form-container container ">
+            <form action="" class="row gy-5 ">
+                <div class="col-6 ">
+                    <label class="form-label" for="noBien">No. de inventario</label>
+                    <input class="form-control" id="noBien" type="text">
+                </div>
+                <div class="col-12">
+                    <label class="form-label" for="Descripcion">Descripcion</label>
+                    <textarea class="form-control" name="" id="Descripcion" rows="5"></textarea>
+                </div>
+                <div class="col-12">
+                    <label class="form-label" for="Depositario">Depositario</label>
+                    <select class="form-control form-select" name="Depositario" id="Depositario">
+                    </select>
+                </div>
+                <div class="col-4">
+                    <label class="form-label" for="Ubicacion">Ubicacion</label>
+                    <select class="form-control form-select" name="Ubicacion_form" id="Ubicacion">
+                    </select>
+                </div>
+                <div class="col-4">
+                    <label class="form-label" for="Etiqueta">Etiqueta</label>
+                    <select class="form-control form-select" name="Etiqueta_form" id="Etiqueta">
+                        <option value="Con etiqueta">Con etiqueta</option>
+                        <option value="Sin etiqueta">Sin etiqueta</option>
+                        <option value="Desconocido">Desconocido</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <label class="form-label" for="Estado">Estado</label>
+                    <select class="form-control form-select" name="Estado_form" id="Estado">
+                        <option value="Ubicado">Ubicado</option>
+                        <option value="No ubicado">No ubicado</option>
+                        <option value="Perdido">Perdido</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="button" id="btnEnviar" class="btn btn-primary">Añadir bien</button>
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+    <footer class="foot_seccion">
+        <p>all rights reserved</p>
+    </footer>
+</body>
+<script src="scripts/getdepo.js"></script>
+<script src="scripts/getubicaciones.js"></script>
+<script src="scripts/postBien.js"></script>
+
+</html>
