@@ -37,7 +37,7 @@ function addbbienrow(bien) {
     celdaAcciones.innerHTML = `
                         <div class="row">
                             <a class="col" href="" onclick="eliminarBien(${bien.id})"><i class="bi bi-trash3"></i></a>
-                            <a class="col" href=""><i class="bi bi-pencil"></i></a>
+                            <a class="col" href="/updateform.html?id=${bien.id}"><i class="bi bi-pencil"></i></a>
                         </div>
     `;
 
